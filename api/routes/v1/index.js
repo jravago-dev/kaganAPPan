@@ -1,6 +1,7 @@
 const express = require("express");
 const eventsRoute = require("./event.route");
 const speakersRoute = require("./speaker.route");
+const topicsRoute = require("./topic.route");
 const router = express.Router();
 
 const defaultRoutes = [
@@ -11,6 +12,10 @@ const defaultRoutes = [
   {
     path: "/speakers",
     route: speakersRoute,
+  },
+  {
+    path: "/topics",
+    route: topicsRoute,
   },
 ];
 
